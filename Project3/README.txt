@@ -17,6 +17,7 @@ the cesspool that is Reddit.com.
 --------------------------------
 |         Installation         |        
 --------------------------------
+
 Things you'll need:
 1. An API account with Reddit which can be acquired by going to: https://www.reddit.com/wiki/api
     a. An API account with Reddit is a necessary part of this project because otherwise we would not be able to pull information from their servers.
@@ -48,15 +49,16 @@ Time to actually get some work done.
     "pip install requests"
     "pip install pprint"
     "pip install schedule"
-3. Within the wtwbbot.py file, change the following:
+3. Wherever you installed python, you will need to copy and paste the praw.ini file from there to your wtwbbot working directory.
+4. Within the wtwbbot.py file, change the following:
     user_agent="Your Name Here",
     client_id="Your ClientID Here",
     client_secret="Your Secret Code Here",
     username="USERNAME",
     password="PASSWORD"
-4. You can also change the subreddits that are queried by changing:
+5. You can also change the subreddits that are queried by changing:
         subreddit1 = reddit.subreddit("SUBREDDIT NAME WITHOUT /r/")
-5. Lastly, to submit posts to your own subreddit, change the subreddit tag to the name of your subreddit.
+6. Lastly, to submit posts to your own subreddit, change the subreddit tag to the name of your subreddit.
         cross_post = submission.crosspost(subreddit="YOURSUBREDDIT", title= submission.title, send_replies=True)
 
 If all is well and configured properly, you should be able to run the code. 
@@ -74,10 +76,20 @@ https://github.com/reddit-archive/reddit/wiki/API
 The build-in API list can be found here: https://www.reddit.com/dev/api
 Posting all of the methods here would take up too much space!
 
+--------------------------------
+|           Credits            |        
+--------------------------------
+
+I would be lying if I said I did this completely on my own and without guidance from other sources.
+
+1. This link taught me how to get started with the application setup: https://www.instructables.com/Reddit-Reply-Bot/
+
+2. This link taught me how to properly write a README: https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
+    Also: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
+
+3. The tutorial in the PRAW documentation helped me get the hang of calling the API and just writing Python in general: https://praw.readthedocs.io/en/latest/tutorials/reply_bot.html
 
 
-
-    
 
 
 
