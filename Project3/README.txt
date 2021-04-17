@@ -61,7 +61,10 @@ Time to actually get some work done.
 6. Lastly, to submit posts to your own subreddit, change the subreddit tag to the name of your subreddit.
         cross_post = submission.crosspost(subreddit="YOURSUBREDDIT", title= submission.title, send_replies=True)
 
-If all is well and configured properly, you should be able to run the code. 
+If all is well and configured properly, you should be able to run the code.
+An example of the output that you should see is shown here (3 hours of runtime): (https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/Output.png)
+
+To exit the program use (Control + C) in the terminal window.
 
 *NOTE* If you would like to test this environment without posting the links, the function below can be set to TRUE:
         reddit.read_only = False
