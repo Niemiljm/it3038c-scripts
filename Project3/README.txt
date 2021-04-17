@@ -38,7 +38,7 @@ Things you'll need:
     b. The next step to getting an API account setup properly is by browsing to: https://ssl.reddit.com/prefs/apps/ while logged into your account, 
         and selecting the *create app* button towards the bottom of the page. Add a name, select script, add a description and set the redirect URL to: http://localhost:8080
         Lastly, submit that form.
-    c. Take note of the 
+    c. Take note of the client ID and Secret code that is within your application banner: ![ClientID and Secret](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/ApplicationCodes.png "ClientID and Secret")
 
 PRAW: The Python Reddit API Wrapper
 
