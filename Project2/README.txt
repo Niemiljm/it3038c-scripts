@@ -52,7 +52,7 @@ Time to actually get some work done.
 3. Run the program by typing "python mySysInfo.py" in the working directory terminal without the quotations. 
 
 If all is well and configured properly, you should be able to run the code.
-An example of the output that you should see is shown here: ()
+An example of the output that you should see is shown here: (https://github.com/Niemiljm/it3038c-scripts/blob/main/Project2/images/OutputAll.png)
 
 
 --------------------------------
