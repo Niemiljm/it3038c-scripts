@@ -11,8 +11,7 @@ This is my first true experience working with reddit's API and although this is 
 --------------------------------
 
 I have had minimal experience with API's and creating bots, however after I completed the API lab I wanted to learn some more. On top of this, I used to browse reddit daily and
-came across some grotesque things that I wanted to share! I can always count on people to continuously post horrible things. Now I have a place I can view them without having to dive into
-the cesspool that is Reddit.com.
+came across some grotesque things that I wanted to share! I can always count on people to continuously post horrible things. Now I have a place I can view them without having to dive into the cesspool that is Reddit.com.
 
 --------------------------------
 |         Installation         |        
