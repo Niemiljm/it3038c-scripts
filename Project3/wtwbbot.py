@@ -5,7 +5,7 @@ import pprint
 import schedule
 import time
 
-
+# PRAW settings that authenticate our application through Reddit's API
 reddit = praw.Reddit(
     user_agent="WtWBBot (by u/Losifen)",
     client_id="Lrxjx1E-T0a_EA",
@@ -14,21 +14,22 @@ reddit = praw.Reddit(
     password="This1Reddit"
 )
 
-reddit.read_only = False
+# The setting that determines if your account is authenticated and can post things to subreddits. Other option = True
+reddit.read_only = False 
 
 subreddit1 = reddit.subreddit("TIHI")
 subreddit2 = reddit.subreddit("awfuleverything")
 subreddit3 = reddit.subreddit("atbge")
 subreddit4 = reddit.subreddit("all")
 
-# These three lines 18-20 will display the information of the subreddit tag above
-# print(subreddit.display_name)
-# print(subreddit.title)
-# print(subreddit.description)
+# The three lines below will display the information of the subreddit tag above, uncomment to use.
+# print(subreddit1.display_name)
+# print(subreddit1.title)
+# print(subreddit1.description)
 
 # This def is the meat and potatos of this bot, it executes a statement for each subreddit given above
 def job():
-    for submission in subreddit1.top("hour", limit=1):                                                          # subreddit1 = TIHI, this gives the top post of the hour
+    for submission in subreddit1.top("hour", limit=1):                                                          # subreddit1 = TIHI (Thanks I Hate It), this gives the top post of the hour
         print(submission.title, "| Has a score of: ", submission.score, "| Link: ", submission.url)             # Prints the output (Title | Has a score of: # | Link: "imageurl") to the terminal
         cross_post = submission.crosspost(subreddit="WtWBBot", title= submission.title, send_replies=True)      # Crossposts the post to the WtWBBot subreddit (reddit.com/r/WtWBBot)
         # pprint.pprint(vars(submission))
