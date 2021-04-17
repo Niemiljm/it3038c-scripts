@@ -39,7 +39,6 @@ Things you'll need:
 6. Python 3.6+
 7. PRAW: The Python Reddit API Wrapper
 
-<<<<<<< HEAD
 -------------------------------------------------------------------------------------------------------
 
 Time to actually get some work done.
@@ -68,15 +67,6 @@ If all is well and configured properly, you should be able to run the code.
 --------------------------------
 |        API References        |        
 --------------------------------
-=======
-1. An API account with Reddit is a necessary part of this project because otherwise we would not be able to pull information from their servers.
-    a. By going to their page: https://www.reddit.com/wiki/api and selecting the *read the terms and register* page, you will be able to fill out thier form and gain access
-        to the API wiki and its tools.
-    b. The next step to getting an API account setup properly is by browsing to: https://ssl.reddit.com/prefs/apps/ while logged into your account, 
-        and selecting the *create app* button towards the bottom of the page. Add a name, select script, add a description and set the redirect URL to: http://localhost:8080
-        Lastly, submit that form.
-    c. Take note of the client ID and Secret code that is within your application banner: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/ApplicationCodes.png "ClientID and Secret")
->>>>>>> 273473e5b9677d2fbdf6a33107c76719496fb76a
 
 Reddit is allowing developers to use their API, so please be kind and review the rules and follow them closely. Not doing so could get your account/project terminated.
 https://github.com/reddit-archive/reddit/wiki/API
