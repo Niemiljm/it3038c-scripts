@@ -26,7 +26,7 @@ Things you'll need:
     c. The next step to getting an API account setup properly is by browsing to: https://ssl.reddit.com/prefs/apps/ while logged into your account, 
         and selecting the *create app* button towards the bottom of the page. Add a name, select script, add a description and set the redirect URL to: http://localhost:8080
         Lastly, submit that form.
-    d. Take note of the client ID and Secret code that is within your application banner:(https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/ApplicationCodes.png)
+    d. Take note of the client ID and Secret code that is within your application banner:![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/ApplicationCodes.png)
 2. Reddit Account that is able to create it's own subreddit, an account can be created here: https://www.reddit.com/register/
 3. Base knowledge of how Reddit as a whole functions. (Subreddits, commenting, karma, etc.)
 4. An IDE (I used Visual Studio Code)
@@ -62,7 +62,7 @@ Time to actually get some work done.
         cross_post = submission.crosspost(subreddit="YOURSUBREDDIT", title= submission.title, send_replies=True)
 
 If all is well and configured properly, you should be able to run the code.
-An example of the output that you should see is shown here (3 hours of runtime): (https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/Output.png)
+An example of the output that you should see is shown here (3 hours of runtime): ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/Output.png)
 
 To exit the program use (Control + C) in the terminal window.
 
