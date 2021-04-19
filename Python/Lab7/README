@@ -46,10 +46,10 @@ Time to actually get some work done.
     b. Clicking on the run icon within the banner at the top of the screen.
 If all is well and configured properly, you should be able to run the code.
 
-Example 1: An example of a simple comparative graph: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/FirstGraph.png)
-Example 2: The two lines that were in example 1, but in separate graphs: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/SecondGraph.png)
-Example 3: 6 Generated graphs, 2 of which have data in them based on coordinates: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/ThirdGraph.png)
-Example 4: A cool looking colormap that was generated: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/FourthGraph.png)
+Example 1: An example of a simple comparative graph: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/FirstGraph.png "FirstGraph")
+Example 2: The two lines that were in example 1, but in separate graphs: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/SecondGraph.png "SecondGraph")
+Example 3: 6 Generated graphs, 2 of which have data in them based on coordinates: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/ThirdGraph.png "ThirdGraph")
+Example 4: A cool looking colormap that was generated: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Python/Lab7/Images/FourthGraph.png "FourthGraph")
 
 To exit the program use (Control + C) in the terminal window.
 
