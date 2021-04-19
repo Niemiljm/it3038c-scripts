@@ -21,6 +21,7 @@ subreddit1 = reddit.subreddit("TIHI")
 subreddit2 = reddit.subreddit("awfuleverything")
 subreddit3 = reddit.subreddit("atbge")
 subreddit4 = reddit.subreddit("all")
+subreddit5 = reddit.subreddit("makemesuffer")
 
 # The three lines below will display the information of the subreddit tag above, uncomment to use.
 # print(subreddit1.display_name)
@@ -43,6 +44,10 @@ def job():
         cross_post = submission.crosspost(subreddit="WtWBBot", title= submission.title, send_replies=True)
     
     for submission in subreddit4.top("hour", limit=1):                                                          # subreddit4 = all (Because reddit is a dumpster fire)
+        print(submission.title, "| Has a score of: ", submission.score, "| Link: ", submission.url)
+        cross_post = submission.crosspost(subreddit="WtWBBot", title= submission.title, send_replies=True)
+    
+    for submission in subreddit5.top("hour", limit=1):                                                          # subreddit4 = all (Because reddit is a dumpster fire)
         print(submission.title, "| Has a score of: ", submission.score, "| Link: ", submission.url)
         cross_post = submission.crosspost(subreddit="WtWBBot", title= submission.title, send_replies=True)
 
