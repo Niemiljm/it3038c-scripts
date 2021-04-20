@@ -70,11 +70,11 @@ def comment_bot(reddit, comments_replied_to):
 
             # This writes to the file.
             with open ("comments_replied_to.txt", "a") as f:                                                        
-                f.write(comment.id + " " + "\n" + " " + comment.body)
+                f.write("\n" + comment.id + " " + " " + comment.body)
     
     print("I'm done for now, nothing else was found...")
     print("-------------------------------------------")
-    time.sleep(600)
+    time.sleep(2400)
 
 # This def is what the above looks at to ensure it is written to that file, and that the comment.id is not already in there.
 def save_saved_comments():
