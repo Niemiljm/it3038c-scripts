@@ -52,13 +52,12 @@ Things you'll need:
 3. Base knowledge of how Reddit as a whole functions. (Subreddits, commenting, karma, etc.)
 4. An IDE (I used Visual Studio Code)
 5. Assorted Python Libraries
-
-    ⋅⋅⋅requests        pip install requests⋅⋅⋅
-    ⋅⋅⋅praw            pip install praw⋅⋅⋅
-    ⋅⋅⋅pprint          pip install pprint⋅⋅⋅
-    ⋅⋅⋅schedule        pip install schedule⋅⋅⋅
-    ⋅⋅⋅time            installed with Python⋅⋅⋅
-    ⋅⋅⋅re              installed with Python⋅⋅⋅
+    *requests        pip install requests
+    *praw            pip install praw
+    *pprint          pip install pprint
+    *schedule        pip install schedule
+    *time            installed with Python
+    *re              installed with Python
 6. Python 3.6+
 7. PRAW: The Python Reddit API Wrapper
 
