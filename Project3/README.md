@@ -41,23 +41,24 @@ I can always count on people to continuously post horrible things. Now I have a 
 
 Things you'll need:
 1. An API account with Reddit which can be acquired by going to: https://www.reddit.com/wiki/api
-    a. An API account with Reddit is a necessary part of this project because otherwise we would not be able to pull information from their servers.
-    b. By going to their page: https://www.reddit.com/wiki/api and selecting the *read the terms and register* page, you will be able to fill out their form and gain access
+    * An API account with Reddit is a necessary part of this project because otherwise we would not be able to pull information from their servers.
+    * By going to their page: https://www.reddit.com/wiki/api and selecting the *read the terms and register* page, you will be able to fill out their form and gain access
         to the API wiki and its tools.
-    c. The next step to getting an API account set up properly is by browsing to: https://ssl.reddit.com/prefs/apps/ while logged into your account, 
+    * The next step to getting an API account set up properly is by browsing to: https://ssl.reddit.com/prefs/apps/ while logged into your account, 
         and selecting the *create app* button towards the bottom of the page. Add a name, select script, add a description and set the redirect URL to: http://localhost:8080
         Lastly, submit that form.
-    d. Take note of the client ID and secret code that is within your application banner:![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/ApplicationCodes.png)
+    * Take note of the client ID and secret code that is within your application banner:![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/ApplicationCodes.png)
+
 2. Reddit account that is able to create it's own subreddit, an account can be created here: https://www.reddit.com/register/
 3. Base knowledge of how Reddit as a whole functions. (Subreddits, commenting, karma, etc.)
 4. An IDE (I used Visual Studio Code)
 5. Assorted Python Libraries
-    *requests        pip install requests
-    *praw            pip install praw
-    *pprint          pip install pprint
-    *schedule        pip install schedule
-    *time            installed with Python
-    *re              installed with Python
+    * requests        pip install requests
+    * praw            pip install praw
+    * pprint          pip install pprint
+    * schedule        pip install schedule
+    * time            installed with Python
+    * re              installed with Python
 6. Python 3.6+
 7. PRAW: The Python Reddit API Wrapper
 
