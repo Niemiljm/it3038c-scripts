@@ -1,3 +1,6 @@
+# Please be aware that if you decide to use the subreddits below, some posts will be NSFW
+# Browse at your own risk. This bot was made for education rather than the content of those subreddits.
+
 import re
 import requests
 import praw
@@ -6,13 +9,8 @@ import schedule
 import time
 
 # PRAW settings that authenticate our application through Reddit's API
-reddit = praw.Reddit(
-    user_agent="WtWBBot (by u/Losifen)",
-    client_id="Lrxjx1E-T0a_EA",
-    client_secret="00mEZRkFK_i7XnwMe0WLwelUSx_9Sw",
-    username="WtWBBot",
-    password="This1Reddit"
-)
+# I am pulling important account information by using my_bot, which is the name of the bot in my praw.ini file
+reddit = praw.Reddit("my_bot")
 
 # The setting that determines if your account is authenticated and can post things to subreddits. Other option = True
 reddit.read_only = False 
