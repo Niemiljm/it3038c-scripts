@@ -63,11 +63,12 @@ Time to actually get some work done.
 
 If all is well and configured properly, you should be able to run the code.
 An example of the output that you should see is shown here (3 hours of runtime): ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/Output.png)
+Another example from the second type of output from the comment bot is seen here: ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/commentOutput.png)
 
 To exit the program use (Control + C) in the terminal window.
 
 *NOTE* If you would like to test this environment without posting the links, the function below can be set to TRUE:
-        reddit.read_only = False
+        **reddit.read_only = False**
 
 --------------------------------
 |        API References        |        
