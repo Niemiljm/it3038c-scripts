@@ -66,21 +66,29 @@ Things you'll need:
 Time to actually get some work done.
 1. Open up your IDE and change directory to your working directory for the project.
 2. In the working directory terminal, execute these commands separately and without quotations.
+```python
     "pip install praw"
     "pip install requests"
     "pip install pprint"
     "pip install schedule"
+```
 3. Wherever you installed python, you will need to copy and paste the praw.ini file from there to your wtwbbot working directory.
 4. Within the wtwbbot.py file, change the following:
+```python
     user_agent="Your Name Here",
     client_id="Your ClientID Here",
     client_secret="Your Secret Code Here",
     username="USERNAME",
     password="PASSWORD"
+```
 5. You can also change the subreddits that are queried by changing:
+```python
         subreddit1 = reddit.subreddit("SUBREDDIT NAME WITHOUT /r/")
+```
 6. Lastly, to submit posts to your own subreddit, change the subreddit tag to the name of your subreddit.
+```python
         cross_post = submission.crosspost(subreddit="YOURSUBREDDIT", title= submission.title, send_replies=True)
+```
 
 If all is well and configured properly, you should be able to run the code.
 An example of the output that you should see is shown here (3 hours of runtime): ![alt text](https://github.com/Niemiljm/it3038c-scripts/blob/main/Project3/Images/Output.png)
