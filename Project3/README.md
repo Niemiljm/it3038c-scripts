@@ -123,7 +123,9 @@ I would be lying if I said I did this completely on my own and without guidance 
 2. This link taught me how to properly write a README: https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
     Also: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers
 
-3. The tutorial in the PRAW documentation helped me get the hang of calling the API and just writing Python in general: https://praw.readthedocs.io/en/latest/tutorials/reply_bot.html
+3. This github project gave some good direction after I had been struggling to get the comment api to work: https://github.com/yashar1/reddit-comment-bot
+
+4. The tutorial in the PRAW documentation helped me get the hang of calling the API and just writing Python in general: https://praw.readthedocs.io/en/latest/tutorials/reply_bot.html
 
 
 

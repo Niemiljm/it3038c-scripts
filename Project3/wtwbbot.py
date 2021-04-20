@@ -1,7 +1,7 @@
 # Please be aware that if you decide to use the subreddits below, some posts will be NSFW.
 # Browse at your own risk. This bot was made for education rather than the content of those subreddits.
 # If you would like to see the bot in action, please browse to https://www.reddit.com/r/WtWBBot/ 
-
+# I will leave the bot running for a while after this assignment is turned in just to show it works!
 
 import re
 import requests
