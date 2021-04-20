@@ -63,7 +63,7 @@ def comment_bot(reddit, comments_replied_to):
         if "I" in comment.body and comment.id not in comments_replied_to and comment.author != reddit.user.me():    # My restrictions to the search.
             print("I found \"user comment\" in your subreddit! From user: " + comment.id)                           # Terminal print with comment.id
             comment.reply("You're doing a good job! Keep it up.")                                                   # Reply
-            print("Hey boss, I replied to the comment from " + comment.id + "| They said: " + comment.body)                                          # Exit terminal reply
+            print("Hey boss, I replied to the comment from " + comment.id + "| They said: " + comment.body)         # Exit terminal reply
 
             # There is a file in this dir that gets printed to. Comments_replied_to.txt
             comments_replied_to.append(comment.id)                                                                 
