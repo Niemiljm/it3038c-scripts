@@ -66,11 +66,11 @@ def comment_bot(reddit, comments_replied_to):
             print("Hey boss, I replied to the comment from " + comment.id + " | They said: " + comment.body)        # Exit terminal reply
 
             # There is a file in this dir that gets printed to. Comments_replied_to.txt
-            comments_replied_to.append(" " + comment.id)                                                                 
+            comments_replied_to.append(comment.id)                                                                 
 
             # This writes to the file.
             with open ("comments_replied_to.txt", "a") as f:                                                        
-                f.write("\n" + comment.id + " " + " " + comment.body)
+                f.write(comment.id + "\n")
     
     print("I'm done for now, nothing else was found...")
     print("-------------------------------------------")
@@ -84,7 +84,8 @@ def save_saved_comments():
         with open("comments_replied_to.txt", "r") as f:
             comments_replied_to = f.read()
             comments_replied_to = comments_replied_to.split("\n")
-    
+            comments_replied_to = list(filter(None, comments_replied_to))
+
     return comments_replied_to
 
 # job() runs the program before the scheduler below begins, so that you can tell right away that it is functional.
