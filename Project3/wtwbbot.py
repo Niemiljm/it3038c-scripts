@@ -57,11 +57,11 @@ def comment_bot(reddit, comments_replied_to):
     print("|Searching Comments|") 
     print("--------------------")
 
-    for comment in reddit.subreddit('WtWBBot').comments(limit=1000):                                                # Searches my sub with a limit of 1000 comments
+    for comment in reddit.subreddit('WtWBBot').comments(limit=75):                                                  # Searches my sub with a limit of 75 comments
         if "I" in comment.body and comment.id not in comments_replied_to and comment.author != reddit.user.me():    # My restrictions to the search
             print("I found \"user comment\" in your subreddit! From user: " + comment.id)                           # Terminal print with comment.id
             comment.reply("You're doing a good job! Keep it up.")                                                   # Reply
-            print("Hey boss, I replied to the comment from " + comment.id + "They said: " + comment.body)                                          # Exit terminal reply
+            print("Hey boss, I replied to the comment from " + comment.id + "| They said: " + comment.body)                                          # Exit terminal reply
 
             # There is a file in this dir that gets printed to. Comments_replied_to.txt
             comments_replied_to.append(comment.id)                                                                 
@@ -71,6 +71,7 @@ def comment_bot(reddit, comments_replied_to):
                 f.write(comment.id + "\n" + comment.body)
     
     print("I'm done for now, nothing else was found...")
+    print("-------------------------------------------")
     time.sleep(600)
 
 # This def is what the above looks at to ensure it is written to that file, and that the comment.id is not already in there.
@@ -83,7 +84,7 @@ def save_saved_comments():
             comments_replied_to = comments_replied_to.split("\n")
     
     return comments_replied_to
-    
+
 # job() runs the program before the scheduler below begins, so that you can tell right away that it is functional
 job()           
 comments_replied_to = save_saved_comments()

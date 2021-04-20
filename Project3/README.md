@@ -6,6 +6,27 @@ WtWB is a python script that takes 4 subreddits from reddit.com and grabs the to
 When let run, it will continuously pull posts and submit them to the WtWB subreddit at reddit.com/r/wtwbbot.
 This is my first true experience working with reddit's API and although this is relatively simple, it took me a while to figure out what I was doing.
 
+*Update* I added a secondary feature to this reddit bot. I created a function that searches through the comments posted on my subreddit, and have it reply a set phrase if it meets certain requirements.
+
+```python
+def comment_bot(reddit, comments_replied_to):
+    print("--------------------")
+    print("|Searching Comments|") 
+    print("--------------------")
+
+    for comment in reddit.subreddit('WtWBBot').comments(limit=75):                                                  # Searches my sub with a limit of 75 comments
+        if "I" in comment.body and comment.id not in comments_replied_to and comment.author != reddit.user.me():    # My restrictions to the search
+            print("I found \"user comment\" in your subreddit! From user: " + comment.id)                           # Terminal print with comment.id
+            comment.reply("You're doing a good job! Keep it up.")                                                   # Reply
+            print("Hey boss, I replied to the comment from " + comment.id + "| They said: " + comment.body)                                          # Exit terminal reply
+
+            # There is a file in this dir that gets printed to. Comments_replied_to.txt
+            comments_replied_to.append(comment.id)                                                                 
+
+            # This writes to the file
+            with open ("comments_replied_to.txt", "a") as f:                                                        
+                f.write(comment.id + "\n" + comment.body)
+```
 --------------------------------
 |          Motivation          |        
 --------------------------------
@@ -68,7 +89,10 @@ Another example from the second type of output from the comment bot is seen here
 To exit the program use (Control + C) in the terminal window.
 
 *NOTE* If you would like to test this environment without posting the links, the function below can be set to TRUE:
-        **reddit.read_only = False**
+
+```python    
+    reddit.read_only = False
+```
 
 --------------------------------
 |        API References        |        
