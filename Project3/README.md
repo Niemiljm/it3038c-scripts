@@ -73,13 +73,13 @@ Time to actually get some work done.
     "pip install schedule"
 ```
 3. Wherever you installed python, you will need to copy and paste the praw.ini file from there to your wtwbbot working directory.
-4. Within the wtwbbot.py file, change the following:
+4. Within the praw.ini file, change the following to match your information:
 ```python
-    user_agent="Your Name Here",
-    client_id="Your ClientID Here",
-    client_secret="Your Secret Code Here",
-    username="USERNAME",
-    password="PASSWORD"
+    user_agent=
+    client_id=
+    client_secret= 
+    password=
+    username=
 ```
 5. You can also change the subreddits that are queried by changing:
 ```python
