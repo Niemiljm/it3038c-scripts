@@ -35,11 +35,16 @@ Things you'll need:
 2. An IDE (I used Visual Studio Code)
 3. The following packages:              (If any are not installed for some reason, use the commands below)
 
-subprocess                              pip install subprocess
-socket                                  pip install socket
-requests                                pip install requests
-psutil                                  pip install psutil
-platform                                pip install platform
+subprocess                              
+* pip install subprocess
+socket                                  
+* pip install socket
+requests                                
+* pip install requests
+psutil                                  
+* pip install psutil
+platform                                
+* pip install platform
 from psutil import virtual_memory
 from subprocess import check_output
 
