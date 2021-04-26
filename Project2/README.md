@@ -37,12 +37,16 @@ Things you'll need:
 
 subprocess                              
 * pip install subprocess
+ 
 socket                                  
 * pip install socket
+ 
 requests                                
 * pip install requests
+ 
 psutil                                  
 * pip install psutil
+ 
 platform                                
 * pip install platform
  
