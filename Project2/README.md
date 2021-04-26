@@ -45,9 +45,10 @@ psutil
 * pip install psutil
 platform                                
 * pip install platform
+ 
 from psutil import virtual_memory
-from subprocess import check_output
 
+from subprocess import check_output
 
 -------------------------------------------------------------------------------------------------------
 
